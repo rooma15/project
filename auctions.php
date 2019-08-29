@@ -59,7 +59,7 @@ while($result = $values->fetch_assoc())
     <div class="container-fluid h-100 d-block d-md-none pt-2 pb-2">
         <div class="row h-100 align-items-center no-gutters">
             <div class="col-auto"><a href="index.php"><img alt="" src="img/logo-small.png"></a></div>
-            <div class="col logo-mobile"><a href="index.php">Times for charity</a></div>
+            <div class="col logo-mobile"><a href="index.php">Time for charity</a></div>
             <div class="col-auto">
                 <div class="main">
                     <div id="first"></div>
