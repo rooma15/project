@@ -153,11 +153,7 @@ while($temp = $bid->fetch_assoc()) {
                     <button class="donate_button make_bid_button">Place my bid</button>
                     <span class="bid_result"></span>
                 </form>
-<<<<<<< HEAD
                 <p class="question_lot">Questions about the lot?<a href="support.php"><span class="askUs">Ask us</span></a></p>
-=======
-                <p class="question_lot">Questions about the lot?<span class="askUs">Ask us</span></p>
->>>>>>> d5f9862bd5b55e47676910a9b0244d454f54191f
             </div>
         </div>
         <div class="all_text_auction">
