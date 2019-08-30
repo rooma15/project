@@ -174,7 +174,7 @@ while($temp = $bid->fetch_assoc()) {
                 Travel and accommodations are not included. We expect all winning bidders and their guests
                 to conduct themselves appropriately when attending an experience won. Polite manners and
                 respect for the generous donor and adherence to any rules or parameters are a must. To be
-                scheduled at a mutually agreed upon date, based on the donor's availability. <span class="terms-of-use">Terms of use<img src="img/terms_of_use_arrow.png"></span></p>
+                scheduled at a mutually agreed upon date, based on the donor's availability. <a href="term_of_use.php"><span class="terms-of-use">Terms of use<img src="img/terms_of_use_arrow.png"></span></a></p>
         </div>
         </div>
     </div>
