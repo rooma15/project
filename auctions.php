@@ -25,7 +25,7 @@ while($result = $values->fetch_assoc())
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/jquery-3-3-1-min.js"></script>
+    <script src="js/jquery-3-3-1-min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -35,8 +35,8 @@ while($result = $values->fetch_assoc())
 <section class="header">
     <div class="container h-100 d-none d-md-block pt-3 pb-3">
         <div class="row h-100 align-items-center no-gutters">
-            <div class="col-auto pr-3 logo d-lg-block d-none"><a href="index.php"><img src="img/logo-small.png" class="logo-img img-fluid">Time for charity</a></div>
-            <div class="col-auto d-lg-none d-block"><a href="index.php"><img src="img/logo-small.png"></a></div>
+            <div class="col-auto pr-3 logo d-lg-block d-none"><a href="index.php"><img alt="Time for charity" src="img/logo-small.png" class="logo-img img-fluid">Time for charity</a></div>
+            <div class="col-auto d-lg-none d-block"><a href="index.php"><img alt="Time for charity" src="img/logo-small.png"></a></div>
             <?if(isset($_SESSION['id'])):?><div class="col-auto pl-3 pr-3">My profile</div><?endif;?>
             <div class="col-auto <?if(!isset($_SESSION['id'])):?>pl-3<?endif;?> pr-3"><a href="index.php">About us</a></div>
             <div class="col-auto pr-3"><a href="auctions.php">Auctions</a></div>
