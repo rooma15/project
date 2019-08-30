@@ -5,9 +5,8 @@ session_start();
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/jquery-3-3-1-min.js"></script>
+    <script src="js/jquery-3-3-1-min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -71,6 +70,18 @@ session_start();
         </div>
     </div>
 
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="doc_name">Terms of use</p>
+                <p class="doc_additional_info">Additional info</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 

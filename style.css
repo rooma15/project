@@ -867,6 +867,17 @@ a:hover{
     height: 16px;
 }
 
+.doc_name{
+    font-size: 72px;
+    font-weight: bold;
+    color: #d71355;
+}
+
+.doc_additional_info{
+    font-size: 36px;
+    color: #808080;
+}
+
 .input_popup::-webkit-input-placeholder {
   color: #a9aeb3; }
 
