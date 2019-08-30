@@ -73,11 +73,11 @@ session_start();
 </section>
 
 
-<section>
+<section class="terms_of_use_section">
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <p class="doc_name">Terms of use</p>
+                <span class="doc_name">Terms of use</span>
                 <p class="doc_additional_info">Additional info</p>
             </div>
         </div>
