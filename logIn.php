@@ -74,11 +74,11 @@ session_start();
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-8 logIn_section text-center">
+        <div class="col-12 col-md-10 logIn_section text-center">
             <span class="logIn_header">Log in your account</span>
             <p class="logIn_preHeader">Have no account yet? <a href="register.php" class="create_now_logIn">Create now</a></p>
             <form id="signInForm">
-                <input type="text" placeholder="Email" name="email" class="logIn_input">
+                <input type="text" placeholder="Email" name="email" class="logIn_input"><br>
                 <input type="password" placeholder="Password" name="password" class="logIn_input"><br>
                 <button type="submit" class="donate_button logIn_button">Log in</button>
             </form>

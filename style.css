@@ -902,6 +902,8 @@ a:not(.create_now_logIn):hover{
     box-shadow: 0 0 10px 0 #cccccc;
     padding-bottom: 36px;
     padding-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 
@@ -925,7 +927,8 @@ a:not(.create_now_logIn):hover{
 
 .logIn_input{
     border-radius: 20px;
-    width: 50%;
+    max-width: 350px;
+    width: 90%;
     border: #cccccc 1px solid;
     height: 40px;
     padding-left: 20px;
@@ -961,7 +964,6 @@ a:not(.create_now_logIn):hover{
 
 .login_footer{
     position: absolute;
-    top: calc(100% - 50px);
     width: 100%;
 }
 

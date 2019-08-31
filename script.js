@@ -281,6 +281,18 @@ function subscribe(){
     )
 }
 
+
+window.onload = window.onresize = function(){
+    var add = 50;
+    var div = document.getElementsByClassName(".logIn_footer");
+    var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
+    if(hasVerticalScrollbar)add = 0;
+    $(".login_footer").css({"top": $(document).outerHeight() - add + "px"})
+};
+
+
+
+
 /*
 window.onload = window.onresize = function(){
     var screen_height = $(this).height();
@@ -288,27 +300,4 @@ window.onload = window.onresize = function(){
     $(".logIn_section").css({'marginTop':offset - 100 + 'px'});
 };*/
 
-/*$(document).ready(function()
-{
-    function timer() {
-        var exp_time = new Array(), days, hours, minutes, seconds;
-    <?for($i = 0;$i < count($arr);$i++):?>
-        exp_time[<?=$i?>] = <?=$arr[$i]['exp_time'] * 1000?>;
-    <?endfor?>
 
-        for (var i = 0; i <<?=count($arr)?>; i++) {
-            if (exp_time[i] - Date.now() <= 0) {
-                $("p.timer" + i).text('аукцион окончен');
-                continue;
-            }
-            date = new Date(exp_time[i] - Date.now());
-            days = date.getUTCDate() - 1;
-            hours = date.getUTCHours();
-            minutes = date.getUTCMinutes();
-            seconds = date.getUTCSeconds();
-            $("p.timer" + i).text("осталось " + days + " дней : " + hours + " часов : " + minutes + " минут : " + seconds + " секунд");
-        }
-        setTimeout(timer, 1000);
-    }
-    timer();
-})*/

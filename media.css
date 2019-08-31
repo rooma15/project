@@ -1,6 +1,22 @@
 
 @media only screen  and (max-width: 576px){
 
+
+    .logIn_header{
+        font-size: 26px;
+    }
+
+    .logIn_preHeader{
+        font-size: 16px;
+    }
+
+    .logIn_section{
+        padding-top: 20px;
+        margin-bottom: 10px;
+        margin-top: 130px;
+    }
+
+
     .doc_name{
         font-size: 36px;
     }
