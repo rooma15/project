@@ -1,5 +1,10 @@
 
 @media only screen  and (max-width: 576px){
+
+    .doc_name{
+        font-size: 36px;
+    }
+
     .supp_h{
         font-size: 30px;
     }
@@ -82,6 +87,26 @@
 }
 
 @media only screen and (max-width: 768px){
+
+    .header_abzaz{
+        font-size: 24px;
+    }
+
+    .text_abzaz_terms_of_use{
+        font-size: 18px;
+    }
+
+    .abzaz_terms_of_use{
+        margin-top: 20px;
+    }
+
+    .doc_name{
+        font-size: 48px;
+    }
+
+    .doc_additional_info{
+        font-size: 24px;
+    }
 
     .terms_of_use_section{
         margin-top: 40px;

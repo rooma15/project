@@ -879,6 +879,23 @@ a:hover{
     color: #808080;
 }
 
+.abzaz_terms_of_use{
+    margin-top: 30px;
+}
+
+.header_abzaz{
+    color: #595959;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.text_abzaz_terms_of_use{
+    font-size: 24px;
+    color: #808080;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
 .input_popup::-webkit-input-placeholder {
   color: #a9aeb3; }
 

@@ -81,6 +81,34 @@ session_start();
                 <p class="doc_additional_info">Additional info</p>
             </div>
         </div>
+        <div class="row abzaz_terms_of_use">
+            <div class="col">
+                <span class="header_abzaz">1.Point one</span>
+                <p class="text_abzaz_terms_of_use">1.1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <p class="text_abzaz_terms_of_use">1.2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <p class="text_abzaz_terms_of_use">1.3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+        <div class="row abzaz_terms_of_use">
+            <div class="col">
+                <span class="header_abzaz">1.Point two</span>
+                <p class="text_abzaz_terms_of_use">2.1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <p class="text_abzaz_terms_of_use">2.2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <p class="text_abzaz_terms_of_use">2.3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
