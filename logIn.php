@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/jquery-3-3-1-min.js"></script>
+    <script src="js/jquery-3-3-1-min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -16,8 +16,8 @@ session_start();
 <section class="header">
     <div class="container h-100 d-none d-md-block pt-3 pb-3">
         <div class="row h-100 align-items-center no-gutters">
-            <div class="col-auto pr-3 logo d-lg-block d-none"><a href="index.php"><img src="img/logo-small.png" class="logo-img img-fluid">Time for charity</a></div>
-            <div class="col-auto d-lg-none d-block"><a href="index.php"><img src="img/logo-small.png"></a></div>
+            <div class="col-auto pr-3 logo d-lg-block d-none"><a href="index.php"><img alt="Time for charity" src="img/logo-small.png" class="logo-img img-fluid">Time for charity</a></div>
+            <div class="col-auto d-lg-none d-block"><a href="index.php"><img alt="Time for charity" src="img/logo-small.png"></a></div>
             <?if(isset($_SESSION['id'])):?><div class="col-auto pl-3 pr-3">My profile</div><?endif;?>
             <div class="col-auto <?if(!isset($_SESSION['id'])):?>pl-3<?endif;?> pr-3"><a href="index.php">About us</a></div>
             <div class="col-auto pr-3"><a href="auctions.php">Auctions</a></div>
@@ -72,91 +72,22 @@ session_start();
 
 </section>
 
-
-<section class="supp_form">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-auto text-center">
-                <span class="supp_h">Have a question?</span><br>
-                <div class="supp_h_small text-center">We will answer as soon as we<br> receive your request</div>
-                <form id="form_send_msg">
-                    <fieldset class="mx-auto fieldset_supp">
-                        <legend>Your email</legend>
-                        <input type="text" id="supp_email" name="email" class="email_supp">
-                    </fieldset>
-                    <fieldset class="mx-auto fieldset_supp">
-                        <legend>Question</legend>
-                        <textarea name="msg" id="supp_msg" class="msg_supp"></textarea>
-                    </fieldset>
-                    <input type="submit" class="supp_form_btn mx-auto" value="Ask question">
-                </form>
-                <div class="data_share text-center">We won`t share your data</div>
-            </div>
-            <div class="col"><img src="img/support_bg.png" class="mx-auto w-100 d-lg-block d-none"></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8 logIn_section text-center">
+            <span class="logIn_header">Log in your account</span>
+            <p class="logIn_preHeader">Have no account yet? <a href="register.php" class="create_now_logIn">Create now</a></p>
+            <form id="signInForm">
+                <input type="text" placeholder="Email" name="email" class="logIn_input">
+                <input type="password" placeholder="Password" name="password" class="logIn_input"><br>
+                <button type="submit" class="donate_button logIn_button">Log in</button>
+            </form>
+            <span class="logIn_have_problems">Have problems logging in? <a href="support.php"><span class="logIn_contact_us">Contact us</span></a></span>
         </div>
     </div>
-</section>
+</div>
 
-<section class="questions">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg col-12">
-                <p id="question-category">General</p>
-                <section>
-                    <p><span onclick="open_answer(1)" id="question">Some text of question</span></p>
-                    <p id="1" class="question-text">
-                        This is an answer to</p>
-                </section>
-                <section>
-                    <p><span onclick="open_answer(2)" id="question">Some text of question</span></p>
-                    <p id="2" class="question-text">
-                        This is an answer to the question listened
-                        above to the question listened above to
-                        the question listened aboveto the question
-                        listened aboveto the question listened
-                        aboveto the question listened above.</p>
-                </section>
-            </div>
-            <div class="col-lg col-12">
-                <p id="question-category">Payment</p>
-                <section>
-                    <p><span onclick="open_answer(3)" id="question">Can not pay via Paypal</span></p>
-                    <p id="3" class="question-text">
-                        This is an answer to the question listened
-                        above to the question listened above to
-                        the question listened aboveto the question
-                        listened aboveto the question listened
-                        aboveto the question listened above.</p>
-                </section>
-            </div>
-            <div class="col-lg col-12">
-                <p id="question-category">Other</p>
-                <section>
-                    <p><span onclick="open_answer(4)" id="question">How to log out from my account</span></p>
-                </section>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 mx-lg-0 mx-auto px-0">
-                <div class="contacts">
-                    <span id="contact-h1">Contact us</span><br>
-                    <span id="contact-worktime"><b>Mn-Fr </b> from 9:00 to 18:00</span><br><br><br>
-                    <span id="contacts-h2">+41(43)321-54-76</span><br>
-                    <span id="contacts-h2">time4charity@gmail.com</span><br><br>
-                    <span id="contacts-h2">Grossmunster street, 55</span><br>
-                    <span id="contacts-h2">Zurich, Switzerland</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<div id="map"></div>
-
-
-<section class="footer">
+<section class="footer login_footer">
     <div class="container">
         <div class="row h-100 align-items-center">
             <div class="col-md-auto col-12 footer_links">Privacy policy</div>
@@ -171,7 +102,6 @@ session_start();
 
 
 <script src="script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBldKRKTa7TD8iAWXPf2m1aWJwnzJKE-sk&callback=initMap"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

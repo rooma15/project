@@ -24,7 +24,7 @@ session_start();
             <div class="col-auto pr-3"><a href="heroes.php">Heroes</a></div>
             <?if(!isset($_SESSION['id'])):?><div class="col-auto pr-3"><a href="support.php">Contact us</a></div><?endif;?>
             <?if(isset($_SESSION['id'])):?><div class="col"><a href="support.php">Contact us</a></div><?endif;?>
-            <?if(!isset($_SESSION['id'])):?><div class="col">Log in</div><?endif;?>
+            <?if(!isset($_SESSION['id'])):?><div class="col"><a href="logIn.php">Log in</a></div><?endif;?>
             <div class="col-auto">
                 <form action="search_results.php" method="post">
                     <input type="search" placeholder="Search" name="search" class="header-search">
@@ -65,7 +65,7 @@ session_start();
                 <div class="col-12 pb-2 mobile-menu-links"><img alt="" src="img/auction-icon.png" class="icons-menu-mobile"><a href="auctions.php">Active auctions</a></div>
                 <div class="col-12 pb-2 mobile-menu-links"><img alt="" src="img/expired-icon.png" class="icons-menu-mobile"><a href="heroes.php">Heroes</a></div>
                 <div class="col-12 pb-2 mobile-menu-links"><img alt="" src="img/support-icon.png" class="icons-menu-mobile"><a href="support.php">Contact us</a></div>
-                <?if(!isset($_SESSION['id'])):?><div class="col-12 pb-5 pt-2 mobile-menu-links"><button class="goSearch">Log in</button></div><?endif;?>
+                <?if(!isset($_SESSION['id'])):?><div class="col-12 pb-5 pt-2 mobile-menu-links"><a href="logIn.php"><button class="goSearch">Log in</button></a></div><?endif;?>
             </div>
         </div>
     </div>

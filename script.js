@@ -281,6 +281,12 @@ function subscribe(){
     )
 }
 
+/*
+window.onload = window.onresize = function(){
+    var screen_height = $(this).height();
+    var offset = screen_height/2 - $(".logIn_section").height()/2;
+    $(".logIn_section").css({'marginTop':offset - 100 + 'px'});
+};*/
 
 /*$(document).ready(function()
 {
