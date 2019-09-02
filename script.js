@@ -109,6 +109,32 @@ function sign_in()
             }
         }
         )*/
+    var isOkay = 1;
+    var postdata = $("#signInForm").serialize();
+    var mass = $(".logIn_input");
+    for(let i=0;i<mass.length;i++){
+        if(mass[i].value === ""){
+            $(mass[i]).css({'border':'1px red solid'});
+            isOkay = 0;
+        }else{
+            $(mass[i]).css({'border':'1px #cccccc solid'});
+        }
+    }
+    if(isOkay === 1){
+        $.ajax(
+            {
+                url: "sign.php",
+                type: "post",
+                data:postdata,
+                success:function(){
+                    location.href = "index.php";
+                },
+                error:function(xhr, status, error){
+
+                }
+            }
+        )
+    }
 }
 
 
