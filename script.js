@@ -31,6 +31,21 @@ jQuery(function ($) {
         if((alpha / 180)%2 !== 0)$(".dop_bids").css({'display':'block'});
         else $(".dop_bids").css({'display':'none'});
      })
+/*
+
+     window.onload = function(){
+         var hasVerticalScrollbar = document.body.scrollHeight > document.body.clientHeight;
+         if(!hasVerticalScrollbar){
+             $(".login_footer").css({'position':'absolute'});
+             $(".login_footer").css({'bottom':'0'});
+         }else{
+             $(".login_footer").css({'position':'relative'});
+         }
+
+         /!*if($(document).height() > $(".login_footer").offset().top + $(".login_footer").height() + 10){
+             $(".login_footer").offset({top:$(document).height() - $(".login_footer").height(), left:$(".login_footer").offset().left});
+         }*!/
+     };*/
 });
 
 
@@ -65,7 +80,7 @@ window.onresize = function ()
 
 function sign_in()
 {
-    var Postdata = $("#signInForm p input").serialize();
+    /*var Postdata = $("#signInForm p input").serialize();
     $("input[type='text']").css("border", "none");
     $("input[type='password']").css("border", "none");
     $.ajax
@@ -93,7 +108,7 @@ function sign_in()
                 }
             }
         }
-        )
+        )*/
 }
 
 
@@ -280,24 +295,5 @@ function subscribe(){
         }
     )
 }
-
-
-window.onload = window.onresize = function(){
-    var add = 50;
-    var div = document.getElementsByClassName(".logIn_footer");
-    var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
-    if(hasVerticalScrollbar)add = 0;
-    $(".login_footer").css({"top": $(document).outerHeight() - add + "px"})
-};
-
-
-
-
-/*
-window.onload = window.onresize = function(){
-    var screen_height = $(this).height();
-    var offset = screen_height/2 - $(".logIn_section").height()/2;
-    $(".logIn_section").css({'marginTop':offset - 100 + 'px'});
-};*/
 
 

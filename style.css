@@ -900,10 +900,10 @@ a:not(.create_now_logIn):hover{
 .logIn_section{
     border-top: 5px #d71355 solid;
     box-shadow: 0 0 10px 0 #cccccc;
-    padding-bottom: 36px;
     padding-top: 50px;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    padding-bottom: 90px;
 }
 
 
@@ -962,8 +962,14 @@ a:not(.create_now_logIn):hover{
      font-weight: lighter;
 }
 
+.wrapper{
+    position: relative;
+    min-height: calc(100% - 63px);
+}
+
 .login_footer{
     position: absolute;
+    bottom: 0;
     width: 100%;
 }
 

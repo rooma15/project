@@ -72,12 +72,14 @@ session_start();
 
 </section>
 
+<div class="wrapper">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 logIn_section text-center">
             <span class="logIn_header">Log in your account</span>
             <p class="logIn_preHeader">Have no account yet? <a href="register.php" class="create_now_logIn">Create now</a></p>
-            <form id="signInForm">
+            <form id="signInForm" action="sign.php">
                 <input type="text" placeholder="Email" name="email" class="logIn_input"><br>
                 <input type="password" placeholder="Password" name="password" class="logIn_input"><br>
                 <button type="submit" class="donate_button logIn_button">Log in</button>
@@ -99,8 +101,7 @@ session_start();
         </div>
     </div>
 </section>
-
-
+</div>
 <script src="script.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
