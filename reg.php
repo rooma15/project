@@ -39,6 +39,7 @@ else {
     $errors['size'] = 0;
 }
 
+$password = password_hash($password, PASSWORD_DEFAULT);
 $result = $mysqli->prepare("INSERT INTO users (id, name, surname, email, passwd, phone) VALUES(NULL, ?, ?, ?, ?, ?)");
 echo $mysqli->error;
 $result->bind_param('sssss', $name ,$surname ,$email ,$password ,$phone);

@@ -31,21 +31,6 @@ jQuery(function ($) {
         if((alpha / 180)%2 !== 0)$(".dop_bids").css({'display':'block'});
         else $(".dop_bids").css({'display':'none'});
      })
-/*
-
-     window.onload = function(){
-         var hasVerticalScrollbar = document.body.scrollHeight > document.body.clientHeight;
-         if(!hasVerticalScrollbar){
-             $(".login_footer").css({'position':'absolute'});
-             $(".login_footer").css({'bottom':'0'});
-         }else{
-             $(".login_footer").css({'position':'relative'});
-         }
-
-         /!*if($(document).height() > $(".login_footer").offset().top + $(".login_footer").height() + 10){
-             $(".login_footer").offset({top:$(document).height() - $(".login_footer").height(), left:$(".login_footer").offset().left});
-         }*!/
-     };*/
 });
 
 
@@ -80,35 +65,6 @@ window.onresize = function ()
 
 function sign_in()
 {
-    /*var Postdata = $("#signInForm p input").serialize();
-    $("input[type='text']").css("border", "none");
-    $("input[type='password']").css("border", "none");
-    $.ajax
-    (
-        {
-            url: "sign.php",
-            type: "post",
-            data:Postdata,
-            dataType: "json",
-            success:function(data)
-            {
-                if(data.status === "OK") location.reload();
-                else
-                    {
-                       this.error(data);
-                    }
-                },
-            error:function(data)
-            {
-                $("#error").css("visibility", "visible");
-                $("#error").html(data.status);
-                for(let i=0;i<data.size;i++)
-                {
-                    $("#" + data[i].error_code).css("border", "1px red solid");
-                }
-            }
-        }
-        )*/
     var isOkay = 1;
     var postdata = $("#signInForm").serialize();
     var mass = $(".logIn_input");
@@ -130,7 +86,7 @@ function sign_in()
                     location.href = "index.php";
                 },
                 error:function(xhr, status, error){
-
+                    $(".logIn_errors").text(xhr.responseText);
                 }
             }
         )

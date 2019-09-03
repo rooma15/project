@@ -82,7 +82,9 @@ session_start();
             <form id="signInForm" action="sign.php">
                 <input type="text" placeholder="Email" name="email" class="logIn_input"><br>
                 <input type="password" placeholder="Password" name="password" class="logIn_input"><br>
-                <p class="logIn_errors"></p>
+                <div class="logIn_errors">
+                    <span id="logIn_error_text"></span>
+                </div>
                 <button type="submit" class="donate_button logIn_button">Log in</button>
             </form>
             <span class="logIn_have_problems">Have problems logging in? <a href="support.php"><span class="logIn_contact_us">Contact us</span></a></span>

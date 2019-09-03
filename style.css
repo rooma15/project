@@ -962,6 +962,13 @@ a:not(.create_now_logIn):hover{
      font-weight: lighter;
 }
 
+.logIn_errors{
+    color: red;
+    font-size: 14px;
+    height: 14px;
+    padding-top: 10px;
+}
+
 .wrapper{
     position: relative;
     min-height: calc(100% - 63px);
