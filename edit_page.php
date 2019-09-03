@@ -7,7 +7,7 @@ $info->bind_param("i", $id);
 $info->execute();
 $info = $info->get_result();
 $result = $info->fetch_assoc();
-$src = "img/" . $result['name'] . "_" . $result['surname'] . ".png";
+$src = "img/auctions/" . $result['name'] . "_" . $result['surname'] . ".png";
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,12 +41,12 @@ $src = "img/" . $result['name'] . "_" . $result['surname'] . ".png";
     <div class="container">
         <div class="row justify-content-center">
             <form id="updateAuct" enctype="multipart/form-data" action="update_info.php" method="post">
-                <img src="<?=$src?>">
+                <img src="<?=$src?>" class="auction_img img-fluid">
                 <input type="file" name="file" id="fileId"><br>
                 <input name="name" type="text" value="<?=$result['name']?>"><br>
                 <input name="surname" type="text" value="<?=$result['surname']?>"><br>
                 <textarea name="description"><?=$result['description']?></textarea><br>
-                <input type="datetime-local" name="date"><br>
+                <input type="datetime-local" name="date" value="<?=date('Y-m-d\TH:i', $result['exp_time'])?>"><br>
                 <input type="submit" value="изменить" class="edit"><br>
                 <a href="edit.php" class="connection">отменить редактирование</a>
             </form>

@@ -55,7 +55,7 @@ session_start();
         font-weight: bold;
     }
 </style>
-<?/*if(isset($_SESSION['admin'])):*/?>
+<?if(isset($_SESSION['admin'])):?>
 <form id="addAuction" method="post" action="create.php" enctype="multipart/form-data">
     <input name="name" type="text" placeholder="Имя Человека"><br>
     <input name="surname" type="text" placeholder="Фамилия"><br>
@@ -96,8 +96,8 @@ session_start();
         )
     })
 </script>
-<?/*endif*/?>
-<?/*if(!isset($_SESSION['admin'])):*/?><!--
+<?endif?>
+<?if(!isset($_SESSION['admin'])):?>
     <form id="checkAdmin"  method="post" action="admin_login.php">
         <div class="container main_popup_out">
             <div class="text-center main_popup_in">
@@ -133,7 +133,7 @@ session_start();
     })
 
 </script>
---><?/*endif;*/?>
+<?endif;?>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

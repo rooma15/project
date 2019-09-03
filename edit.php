@@ -63,7 +63,7 @@ while($result = $auctions->fetch_assoc())
     <?for($i=0;$i < count($arr);$i++):?>
         <div class="row auct">
             <div class="col-3 text-center">
-                <img src="<?=$arr[$i]['src']?>" class="auction_img"><br>
+                <a href="auction.php?id=<?=$arr[$i]['id']?>"><img src="<?=$arr[$i]['src']?>" class="auction_img img-fluid"></a><br>
                 <h4><?=$arr[$i]['name']?>  <?=$arr[$i]['surname']?></h4>
             </div>
             <div class="col-6">
@@ -74,6 +74,9 @@ while($result = $auctions->fetch_assoc())
                <a onclick="delete_auct(<?=$arr[$i]['id']?>)" href="#">Удалить</a> | <a onclick="edit()" href="edit_page.php?id=<?=$arr[$i]['id']?>">Реадктировать</a>
             </div>
         </div>
+        <br>
+        <hr>
+        <br>
     <?endfor;?>
 </div>
 <script>

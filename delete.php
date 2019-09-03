@@ -13,7 +13,7 @@ $delete->bind_param("i", $id);
 if(!$delete->execute())header("HTTP/1.0 403 Forbidden");
 else
 {
-    $src = "img/" . $name . "_" . $surname . ".png";
+    $src = "img/auctions/" . $name . "_" . $surname . ".png";
     unlink($src);
     echo true;
 }

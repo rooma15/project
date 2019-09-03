@@ -13,7 +13,7 @@ body, html{
 
 .auction_img {
   width: 240px;
-  height: 400px;
+  /*height: 400px;*/
   background-image: linear-gradient(0deg, white, grey); }
 
 .header {
