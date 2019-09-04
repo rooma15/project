@@ -1,5 +1,5 @@
 <?php
-$email = $_POST['email'];
+$email = trim($_POST['email']);
 if(!preg_match('/^(([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9\-]+)\.[a-zA-Z0-9\-.]+$)/', $email) && $email != ""){
     echo json_encode(array("error_code"=>"wrong_email"));
     exit;

@@ -4,7 +4,7 @@ if(isset($_SESSION['id']))
 {
     $auction_id = $_POST['id'];
     $user_id = $_SESSION['id'];
-    $value = $_POST['value'];
+    $value = trim($_POST['value']);
     if ($value == ''){
         header('HTTP/1.1 500 Internal Server Error');
         print "Enter your bid";

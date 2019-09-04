@@ -25,9 +25,9 @@ while($result = $base->fetch_assoc())
 
 
 
-        $delete_bets = $mysqli->prepare("DELETE FROM bets WHERE auction_id=?");
+        /*$delete_bets = $mysqli->prepare("DELETE FROM bets WHERE auction_id=?");
         $delete_bets->bind_param("i", $result['id']);
-        $delete_bets->execute();
+        $delete_bets->execute();*/
 
 
         $delete = $mysqli->prepare("DELETE FROM auctions WHERE id=?");

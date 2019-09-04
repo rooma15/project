@@ -1,7 +1,6 @@
 <?php
 session_start();
-include_once("check.php");
-$original_key = $_POST['search'];
+$original_key = trim($_POST['search']);
 $key = mb_strtolower($_POST['search']);
 $mysqli = new mysqli("localhost", "root", "", "mybase");
 $active = $mysqli->query("SELECT * FROM auctions");

@@ -1,8 +1,8 @@
 <?php
-$name = $_POST['name'];
+$name = trim($_POST['name']);
 $id = $_POST['id'];
-$surname = $_POST['surname'];
-$description = $_POST['description'];
+$surname = trim($_POST['surname']);
+$description = trim($_POST['description']);
 if(!empty($_FILES))
 {
     $tmp_name = $_FILES['file']['tmp_name'];

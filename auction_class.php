@@ -1,4 +1,5 @@
 <?php
+$mysqli = new mysqli("localhost", "root", "", "mybase");
 class auction
 {
     private $name;

@@ -1,5 +1,5 @@
 <?php
-$email = $_POST['email'];
+$email = trim($_POST['email']);
 $text = $_POST['msg'];
 $msg = array();
 if($email == '' || !preg_match('/^(([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9\-]+)\.[a-zA-Z0-9\-.]+$)/', $email))array_push($msg, array("error_code"=>"email"));

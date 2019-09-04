@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once("check.php");
 include_once('auction_class.php');
 $auctions = $mysqli->query("SELECT * FROM auctions");
 $arr = array();
