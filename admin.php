@@ -74,6 +74,7 @@ session_start();
 <script>
     $("#addAuction").submit(function (e) {
         e.preventDefault();
+        $(".status").html("<span style='color: blue;'>Подождите....</span>");
         var file_data = $('#fileId').prop('files')[0];
         var form_data =  new FormData($("#addAuction")[0]);
         form_data.append('file', file_data);
